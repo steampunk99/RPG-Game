@@ -7,4 +7,12 @@ magic = [{
 }]
 
 player = Person(450, 65, 60, 85, magic)
-enemy = Person(1200, 76, 67, 88, 40, magic)
+enemy = Person(1200, 76, 67, 88, magic)
+
+running = True
+i = 0
+
+print(bcolors.FAIL + bcolors.BOLD + "Enemy Attack!" + bcolors.ENDC)
+
+while running:
+  
