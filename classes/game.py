@@ -61,7 +61,7 @@ class Person:
 
     def choose_Action(self):
         i = 1
-        print("Actions")
+        print(bcolors.OKBLUE + bcolors.BOLD + "Actions" + bcolors.ENDC)
         for item in self.actions:
             print(str(i) + ":", item)
 
