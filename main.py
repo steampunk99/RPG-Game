@@ -17,7 +17,7 @@ print(bcolors.FAIL + bcolors.BOLD + "Enemy Attack!" + bcolors.ENDC)
 while running:
     print("====================")
     player.choose_Action()
-    choice = input("Choose an action:")
+    choice = input("Choose an action: ")
     index = int(choice) - 1
     print("You chose ", index)
 
