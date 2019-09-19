@@ -10,7 +10,7 @@ class bcolors:
 
 
 class Person:
-    def __init__(self, hp, mp attack, magic, defense):
+    def __init__(self, hp, mp, attack, magic, defense):
         self.max_hp = hp
         self.hp = hp
         self.max_mp = mp
