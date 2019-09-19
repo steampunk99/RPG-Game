@@ -17,3 +17,5 @@ class Person:
         self.mp = mp
         self.attackLow = attack - 10
         self.attackHigh = attack + 10
+        self.defense = defense
+        self.magic = magic
