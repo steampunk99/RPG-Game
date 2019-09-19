@@ -53,8 +53,11 @@ while running:
           "player health is:", player.getHp())
 
     print("================================")
-    print("Enemy hit point" + bcolors.FAIL +
-          str(enemy.getHp) + "/" + str(enemy.getMax_hp()) + bcolors.ENDC)
+    print("Enemy hit points" + bcolors.FAIL +
+          str(enemy.getHp) + "/" + str(enemy.getMax_hp()) + bcolors.ENDC + "\n")
+
+    print("Player hit points" + bcolors.OKGREEN +
+          str(player.getHp) + "/" + str(player.getMax_hp()) + bcolors.ENDC + "\n")
 
     if enemy.getHp() == 0:
         print(bcolors.OKGREEN + "You  win" + bcolors.ENDC)
