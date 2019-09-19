@@ -30,3 +30,7 @@ class Person:
     def generateSpellDamage(self, i):
         magicLow = self.magic[i]["damage"]-5
         magicHigh = self.magic[i]["damage"]+5
+        return random.randrange(magicLow, magicHigh)
+
+    def takeDamage(self, damage):
+        self.hp -= damage
