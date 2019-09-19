@@ -6,4 +6,4 @@ class bcolors:
     FAIL = '\033[95m'
     ENDC = '\033[95m'
     BOLD = '\033[95m'
-    UNDERLINE = '\033[95m'
+    UNDERLINE = '\033[4m'
