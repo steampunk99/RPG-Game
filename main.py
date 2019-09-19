@@ -15,4 +15,45 @@ i = 0
 print(bcolors.FAIL + bcolors.BOLD + "Enemy Attack!" + bcolors.ENDC)
 
 while running:
-  
+    print("====================")
+    player.choose_Action()
+    choice = input("Choose an action:")
+    index = int(choice) - 1
+    print("You chose ", index)
+
+    if index == 0:
+        player_damage = player.generateDamage()
+        enemy.takeDamage(player_damage)
+        print("You attacked for", player_damage,
+              "points of damage. Enemy HP: ", enemy.getHp())
+
+    elif index == 1:
+        player.choose_Magic()
+        magic_choice = int(input("Choose magic:")) - 1
+        magic_damage = player.generateSpellDamage(magic_choice)
+        spell = player.getSpellName(magic_choice)
+        cost = player.getSpellMpCost(magic_choice)
+
+        current_mp = player.getMp()
+
+        if cost > current_mp:
+            print(bcolors.FAIL +
+                  "You are unable to use magic at this time " + bcolors.ENDC)
+            continue
+        player.reduce_Mp(cost)
+        enemy.takeDamage(magic_damage)
+
+    enemy_choice = 1
+
+    enemy_damage = enemy.generateDamage()
+    player.takeDamage(enemy_damage)
+    print("Enemy attacks for ", enemy_damage,
+          "player health is:", player.getHp())
+
+    if enemy.getHp() == 0:
+        print(bcolors.OKGREEN + "You  win" + bcolors.ENDC)
+        running = False
+
+    elif player.getHp == 0:
+        print(bcolors.FAIL + "You have Lost" + bcolors.ENDC)
+        running = False
