@@ -61,11 +61,13 @@ class Person:
 
     def choose_Action(self):
         i = 1
+        print("Actions")
         for item in self.actions:
             print(str(i) + ":", item)
 
     def choose_Magic(self):
         i = 1
+        print("Magic")
         for spell in self.magic:
             print(str(i) + ":", spell["name"])
             i += 1
