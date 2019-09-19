@@ -4,6 +4,6 @@ class bcolors:
     OKGREEN = '\033[95m'
     WARNING = '\033[95m'
     FAIL = '\033[95m'
-    ENDC = '\033[95m'
-    BOLD = '\033[95m'
+    ENDC = '\033[0m'
+    BOLD = '\033[1m'
     UNDERLINE = '\033[4m'
