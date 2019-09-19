@@ -7,6 +7,4 @@ magic = [{
 }]
 
 player = Person(450, 65, 60, 85, magic)
-print(player.generateDamage())
-print(player.generateDamage())
-print(player.generateDamage())
+enemy = Person(1200, 76, 67, 88, 40, magic)
