@@ -55,3 +55,6 @@ class Person:
 
     def getSpellName(self, i):
         return self.magic[i]["name"]
+
+    def getSpellMpCost(self, i):
+        return self.magic[i]["cost"]
