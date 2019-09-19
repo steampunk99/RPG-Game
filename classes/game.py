@@ -34,3 +34,24 @@ class Person:
 
     def takeDamage(self, damage):
         self.hp -= damage
+        if self.hp < 0:
+            self.hp = 0
+            return self.hp
+
+    def getHp(self):
+        return self.hp
+
+    def getMax_hp(self):
+        return self.max_hp
+
+    def getMp(self):
+        return self.mp
+
+    def getMax_mp(self):
+        return self.max_mp
+
+    def reduce_Mp(self, cost):
+        self.mp -= cost
+
+    def getSpellName(self, i):
+        return self.magic[i]["name"]
