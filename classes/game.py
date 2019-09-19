@@ -68,3 +68,4 @@ class Person:
         i = 1
         for spell in self.magic:
             print(str(i) + ":", spell["name"])
+            i += 1
