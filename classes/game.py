@@ -58,3 +58,13 @@ class Person:
 
     def getSpellMpCost(self, i):
         return self.magic[i]["cost"]
+
+    def choose_Action(self):
+        i = 1
+        for item in self.actions:
+            print(str(i) + ":", item)
+
+    def choose_Magic(self):
+        i = 1
+        for spell in self.magic:
+            print(str(i) + ":", spell["name"])
