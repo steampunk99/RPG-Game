@@ -16,3 +16,4 @@ class Person:
         self.max_mp = mp
         self.mp = mp
         self.attackLow = attack - 10
+        self.attackHigh = attack + 10
