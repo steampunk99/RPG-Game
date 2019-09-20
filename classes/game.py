@@ -53,7 +53,10 @@ class Person:
     def reduce_Mp(self, cost):
         self.mp -= cost
 
-   
+    def heal(self, damage):
+        self.hp -= damage
+        if self.hp > self.max_hp:
+            self.hp = self.max_hp
 
     def choose_Action(self):
         i = 1
