@@ -11,8 +11,8 @@ meteor = Spell("meteor", 12, 120, "black magic")
 cure = Spell("cure", 12, 120, "white magic")
 cura = Spell("cure", 18, 200, "white magic")
 
-player = Person(450, 65, 60, 85, [fire, thunder, glizzard, meteor, cura, cure)
-enemy = Person(1200, 76, 67, 88, magic)
+player = Person(450, 65, 60, 85, [fire, thunder, glizzard, meteor, cura, cure])
+enemy = Person(1200, 76, 67, 88, [])
 
 running = True
 i = 0
