@@ -53,11 +53,7 @@ class Person:
     def reduce_Mp(self, cost):
         self.mp -= cost
 
-    def getSpellName(self, i):
-        return self.magic[i]["name"]
-
-    def getSpellMpCost(self, i):
-        return self.magic[i]["cost"]
+   
 
     def choose_Action(self):
         i = 1
