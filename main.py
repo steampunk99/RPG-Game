@@ -1,4 +1,7 @@
 from classes.game import Person, bcolors
+from classes.magic import Spell
+
+fire = Spell("fire", 10, 100, "black magic")
 
 magic = [{
     "name": "Fire", "cost": 10, "damage": 60,
